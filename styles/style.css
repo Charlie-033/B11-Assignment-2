@@ -226,10 +226,11 @@ body{
     background-image: url('../assets/bg.png');
     /* background-size: cover; */
     background-repeat: repeat;
-    /* background:linear-gradient(0deg,#FFD6A5 10%, white ); */
+    /* background: linear-gradient(0deg,#FFD6A5 10%, white ); */
 }
 .stories{
     display: flex;
+    justify-content: space-evenly;
 }
 .stories-title{
     font-size: 3rem;
@@ -240,21 +241,21 @@ body{
 .right-story-cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    /* max-height: 640px; */
+    gap: 1.5rem;
+    max-height: 640px;
 }
 .left-story-card{
     max-width: 540px;
     max-height: 640px;
     background-color: wheat;
-    margin-right: 50px;
+    margin-right: 20px;
     border-radius: 16px;
 }
 .left-story-card > img{
     width: 100%;
     border-radius: 16px 16px 0px 0px;
 }
-.story-2 > img{
+.story-2 > img, .story-3 > img, .story-4 > img, .story-5 > img{
     width: 100%;
     border-radius: 16px 16px 0px 0px;
 }
@@ -266,7 +267,40 @@ body{
     background-color: #95B226;
     margin: 20px;
     margin-top: -25px;
-    padding: 12px 12px;
+    padding: 10px 12px;
+    border-radius: 30px;
+}
+.story-3-date{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #fa5757;
+    margin: 20px;
+    margin-top: -25px;
+    padding: 10px 12px;
+    border-radius: 30px;
+}
+.story-4-date{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #5462ff;
+    margin: 20px;
+    margin-top: -25px;
+    padding: 10px 12px;
+    border-radius: 30px;
+}
+.story-5-date{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #26b29b;
+    margin: 20px;
+    margin-top: -25px;
+    padding: 10px 12px;
     border-radius: 30px;
 }
 .story-1-date{
@@ -295,9 +329,9 @@ body{
     margin: 20px;
     margin-bottom: -50px;
 }
-.story-2{
+.story-2, .story-3, .story-4, .story-5{
     max-width: 291px;
-    max-height: 320px;
+    max-height: 310px;
     background-color: wheat;
     border-radius: 16px;
 }
