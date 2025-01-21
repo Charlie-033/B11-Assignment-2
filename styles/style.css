@@ -109,6 +109,61 @@ body{
     border: none;
 }
 
+/* About styles */
+.about-title{
+    font-size: 3rem;
+    font-weight: 650;
+    color: black;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+.about-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.card1, .card2, .card3{
+    border: 1px solid gray;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.card-img{
+    margin-top: 60px;
+    margin-bottom: 32px;
+    max-width: 100%;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.card-text{
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: gray;
+    margin-bottom: 3rem;
+}
+.read-more-1{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #64C8FF;
+}
+.read-more-2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #F0AA00;
+}
+.read-more-3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #8700FF;
+}
 /* Responsive for small devices */
 @media screen and (max-width: 576px){
     #navbar{
