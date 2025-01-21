@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B11-Assignment-2</title>
-    <link rel="stylesheet" href="styles/style.css">          
-</head>
-<body class="quicksand-font">
-    <nav class="navbar">
-        <div class="nav-logo">
-            <img src="assets/logo.png" alt="logo">
-            <h3 class="nav-title">SCHOOL</h3>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="quicksand-font">
+    <nav id="navbar">
+      <div class="nav-logo">
+        <img src="assets/logo.png" alt="logo" />
+        <h3 class="nav-title">SCHOOL</h3>
+      </div>
+      <div class="nav-items">
+        <ul>
+          <li><a class="item-1" href="index.html">Home</a></li>
+          <li><a class="item-2" href="about.html">About</a></li>
+          <li><a class="item-3" href="services.html">Facilities</a></li>
+          <li><a class="item-4" href="contact.html">Admission</a></li>
+        </ul>
+      </div>
+      <button class="contact">Contact</button>
+    </nav>
+    <!-- Responsive Navbar -->
+      <div class="responsive-nav">
+        <img src="assets/logo.png" alt="logo" />
+        <div class="three-dot">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
         </div>
-        <div class="nav-items">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Facilities</a></li>
-                <li><a href="contact.html">Admission</a></li>
-            </ul>
-        </div>
-        <button class="contact">Contact</button>
-</nav>
-</body>
+      </div>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <h1 class="header-title">
+          <span class="orange-span">Empowering</span> <br />
+          students from small <br />
+          age <span class="skyblue-span">towards vision</span>
+        </h1>
+        <p class="header-text">
+          With the courage, Confidence, Creativity and Compassion to make <br />
+          their Unique Contribution in a Diverse and Dynamic World.
+        </p>
+        <button class="Enroll-btn">Enroll Now</button>
+      </div>
+      <div class="header-img">
+        <img src="assets/hero-kids.png" alt="header-img" />
+      </div>
+    </header>
+  </body>
 </html>

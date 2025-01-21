@@ -8,10 +8,26 @@
 }
 body{
     margin: 0px 140px;
+    background-color: #4955600a;
+}
+.responsive-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border: 1px solid orange;
+    display: none;
+}
+.three-dot > .dot{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 5px 0px;
+    border-radius: 5px;
 }
 
 /* navbar styles */
-.navbar {
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,4 +48,97 @@ body{
     font-size: 2rem;
     font-weight: 600;
     color: black;
+}
+.item-1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #FEA301;
+}
+.item-2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #01ACFD;
+}
+.item-3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #05D4DF;
+}
+.item-4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #5D58EF;
+}
+.contact{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background-color: orange;
+    padding: 0.6rem 3.5rem;
+    border-radius: 0.8rem;
+    border: none;
+}
+/* header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.header-title{
+    font-size: 3.5rem;
+    font-weight: 650;
+    color: black;
+}
+.orange-span{
+    color: orange;
+}
+.skyblue-span{
+    color: #01ACFD;
+}
+.header-text{
+    font-size: 1.25rem;
+}
+.Enroll-btn{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    padding: 0.6rem 3.5rem;
+    border-radius: 0.8rem;
+    border: none;
+}
+
+/* Responsive for small devices */
+@media screen and (max-width: 576px){
+    #navbar{
+        display: none;
+    }
+    .responsive-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
+        border: 1px solid orange;
+        /* margin: 0; */
+    }
+    .header{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 0rem;
+        margin: 0px 16px;
+    }
+    .header-title{
+        font-size: 2.25rem;
+    }
+    .header-text{
+        font-size: 1.1rem;
+    }
+    .header-img > img{
+        max-width: 336px;
+    }
+    body{
+        margin: 0;
+    }
 }
