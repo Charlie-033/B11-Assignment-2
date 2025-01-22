@@ -119,6 +119,7 @@ body{
 /* About styles */
 .about{
     background-image: url('../assets/bg.png');
+    background-size: cover;
 }
 .about-title{
     font-size: 3rem;
@@ -192,17 +193,11 @@ body{
     margin-left: 5px;
 }
 .arrow{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    text-align: center;
     margin-top: 80px;
     margin-bottom: 60px;
 }
 .arrow> .less-than{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 70px;
     height: 70px;
     font-size: 40px;
@@ -212,11 +207,9 @@ body{
     color: white;
     background-color: orange;
     border: none;
+    margin-right: 15px;
 }
 .arrow> .grater-than{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 70px;
     height: 70px;
     font-size: 40px;
@@ -229,10 +222,9 @@ body{
 }
 /* Story Styles */
 .story{
-    background-image: url('../assets/bg.png');
-    /* background-size: cover; */
-    background-repeat: repeat;
-    /* background: linear-gradient(0deg,#FFD6A5 10%, white ); */
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #fea1014c),
+    url('../assets/bg.png');
 }
 .stories{
     display: flex;
@@ -253,7 +245,7 @@ body{
 .left-story-card{
     max-width: 540px;
     max-height: 640px;
-    background-color: wheat;
+    background-color: #FFFFFF;
     margin-right: 20px;
     border-radius: 16px;
 }
@@ -269,7 +261,7 @@ body{
     position: absolute;
     font-size: 1rem;
     font-weight: 600;
-    color: white;
+    color: #FFFFFF;
     background-color: #95B226;
     margin: 20px;
     margin-top: -25px;
@@ -280,7 +272,7 @@ body{
     position: absolute;
     font-size: 1rem;
     font-weight: 600;
-    color: white;
+    color: #FFFFFF;
     background-color: #fa5757;
     margin: 20px;
     margin-top: -25px;
@@ -291,7 +283,7 @@ body{
     position: absolute;
     font-size: 1rem;
     font-weight: 600;
-    color: white;
+    color: #FFFFFF;
     background-color: #5462ff;
     margin: 20px;
     margin-top: -25px;
@@ -302,7 +294,7 @@ body{
     position: absolute;
     font-size: 1rem;
     font-weight: 600;
-    color: white;
+    color: #FFFFFF;
     background-color: #26b29b;
     margin: 20px;
     margin-top: -25px;
@@ -313,7 +305,7 @@ body{
     position: absolute;
     font-size: 1rem;
     font-weight: 600;
-    color: white;
+    color: #FFFFFF;
     background-color: #3CD8E8;
     margin: 20px;
     margin-top: -25px;
@@ -338,7 +330,7 @@ body{
 .story-2, .story-3, .story-4, .story-5{
     max-width: 291px;
     max-height: 310px;
-    background-color: wheat;
+    background-color: #FFFFFF;
     border-radius: 16px;
 }
 .story-2-title{
@@ -348,14 +340,16 @@ body{
     margin: 2.5rem 1.2rem;
     line-height: 1.8rem;
 }
+.wrapper{
+    text-align: center;
+}
 .view-all-btn{
-    display: block;
     margin: 80px auto;
     font-size: 1.2rem;
     font-weight: 500;
     color: white;
     background-color: black;
-    padding: 0.6rem 3.5rem;
+    padding: 0.6rem 3rem;
     border-radius: 0.8rem;
     border: none;
 }
@@ -399,7 +393,12 @@ body{
     margin: 0;
     padding: 0;
 }
-
+.follow-us{
+    font-size: 26px;
+}
+.social-logo > img{
+    margin-right: 10px;
+}
 /* Responsive for small devices */
 @media screen and (max-width: 576px){
     .navbar, .arrow, .left-story-card{
@@ -460,6 +459,13 @@ body{
     .navbar, .header, .about, .story{
         padding: 0px 0px;
         margin: 0px;
+    }
+    .footer{
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+    .left-footer{
+        max-width: 100%;
     }
     body{
         margin: 0px;
